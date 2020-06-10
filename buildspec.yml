@@ -6,7 +6,7 @@ phases:
   build:
     commands:
       - npm install time
-      - export BUCKET=lambda-deployment-artifacts-<name>
+      - export BUCKET=lambda-deployment-artifacts-alex
       - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
 artifacts:
   type: zip

@@ -2,9 +2,9 @@ var time = require('time');
 
 exports.handler = (event, context, callback) => {
     var currentTime = new time.Date();
-    currentTime.setTimezone("XXX/XXX");
+    currentTime.setTimezone("South America/COT");
     callback(null, {
         statusCode: '200',
-        body: 'La hora exacta en XXXX es: ' + currentTime.toString(),
+        body: 'La hora exacta en Colombia es: ' + currentTime.toString(),
     });
 };
